@@ -1,0 +1,8 @@
+[Rancher]
+rancher ansible_ssh_port=22 ansible_ssh_host=x.x.x.x
+
+[nodes:children]
+application
+
+[application]
+node1 ansible_ssh_port=22 ansible_ssh_host=y.y.y.y
